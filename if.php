@@ -1,23 +1,44 @@
 <?php
 $edad = 20;
 if($edad >= 18){
-    echo "eres mayor de edad";
+    echo "eres mayor de edad <br>";
 }
 
-$nota = 11;
-if($nota >= 10.5){
-    echo "Usted aprobo";
-}else {
-    echo "Desaprobaste";
-}
-$promedio = 15;
-
-if ($promedio >= 18) {
+echo "Notas <br>";
+$nota = 15;
+if ( $nota >= 18){
     echo "Excelente";
-} elseif ($promedio >= 14) {
+
+} elseif ($nota >= 14 && $nota <= 17) {
     echo "Bueno";
-} elseif ($promedio >= 11) {
+
+} elseif ( 11<=$nota && $nota>=13){
     echo "Regular";
+}else {
+    echo "desaprobado";
+}
+echo "Sueldo <br>";
+
+$sueldobase = 1500;
+$anios = 2;
+$desc = 0;
+$sueldFinal = 0;
+$bono = 0;
+if ($anios <= 2){
+    $desc = 0.05;
+} elseif ($anios >= 3 && $anios <= 5){
+    $desc = 0.10;
+} elseif ( $anios > 5 && $anios <= 10){
+    $desc = 0.15;
+} elseif ($anios > 10 ){
+    $desc = 0.20;
+} 
+$bono = $sueldobase * $desc;
+$sueldFinal = $sueldobase + $bono;
+if ($sueldFinal > 3000){
+    echo "Su sueldo es: $sueldFinal <br>";
+    echo "Debe de pagar impuestos";
 } else {
-    echo "Desaprobado";
+    echo "Su sueldo es: $sueldFinal <br>";
+    echo "No paga Impuestos";
 }
