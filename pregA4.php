@@ -1,5 +1,5 @@
 <?php
-echo "TABLA DE MULTIPLICACION <br>";
+echo "TABLA DE MULTIPLICACION ".PHP_EOL;
 #DE FORMA CONTINUA
 $a = 6;
 $b = 6;
@@ -9,5 +9,5 @@ for($i=1; $i<=$a;$i++){
         $resultado = $i*$j;
         echo "$resultado ";
     }
-    echo "<br>";
+    echo PHP_EOL;
 }
