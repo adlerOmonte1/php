@@ -1,4 +1,4 @@
-# ARCHITECTURE DECISION RECORD (ADR)
+# ARCHITECTURE DECISION RECORD (ADR) 1
 
 | Atributo | Detalle |
 | :--- | :--- |
@@ -51,7 +51,7 @@ Por otro lado, el modelo de pago por uso real, elimina el desperdicio financiero
 * Configuración cuidadosa de slots para lograr despliegues sin caídas
 * Mayor complejidad para monitorear errores al dividir el monolito
 
-# ARCHITECTURE DECISION RECORD (ADR)
+# ARCHITECTURE DECISION RECORD (ADR) 2
 
 | Atributo | Detalle |
 | :--- | :--- |
@@ -105,7 +105,7 @@ A nivel de negocio, la adopción de la capa gratuita garantiza el cumplimiento e
 * **Riesgo por consumo de RU/s.** Consultas mal diseñadas sin la clave de partición correcta pueden agotar rápidamente los 1.000 RU/s gratuitos, generando latencia adicional.
 
 
-# ARCHITECTURE DECISION RECORD (ADR)
+# ARCHITECTURE DECISION RECORD (ADR) 5
 
 | Atributo | Detalle |
 | :--- | :--- |
